@@ -5,9 +5,7 @@ const NavBar = () => {
     <>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
-          <a className="navbar-brand fw-bolder" href="true">
-            LOGO
-          </a>
+          <p className="navbar-brand fw-bolder">LOGO</p>
           <button
             className="navbar-toggler"
             type="button"
@@ -23,7 +21,7 @@ const NavBar = () => {
             <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"></ul>
             <ul className="nav-link">
               <li>
-                <a href>Member</a>
+                <p>Member</p>
               </li>
             </ul>
           </div>

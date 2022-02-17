@@ -33,7 +33,7 @@ const BModal = ({
 };
 
 BModal.defaultProps = {
-  title: "Etranzact",
+  // title: "Etranzact",
   hasFooter: false,
   backdrop: "static",
 };

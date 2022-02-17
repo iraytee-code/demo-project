@@ -1,0 +1,184 @@
+{
+  "biodata": [
+    {
+      "id": 1,
+      "firstName": "Teodora",
+      "lastName": "Crich",
+      "email": "tcrich0@wunderground.com",
+      "gender": "Male",
+      "phoneNumber": "304-309-0295",
+      "stateOfOrigin": "West Virginia"
+    },
+    {
+      "id": 2,
+      "firstName": "Ashli",
+      "lastName": "Colbeck",
+      "email": "acolbeck1@bloomberg.com",
+      "gender": "Male",
+      "phoneNumber": "650-699-0283",
+      "stateOfOrigin": "California"
+    },
+    {
+      "id": 3,
+      "firstName": "Eldridge",
+      "lastName": "Peirson",
+      "email": "epeirson2@delicious.com",
+      "gender": "Male",
+      "phoneNumber": "718-528-9862",
+      "stateOfOrigin": "New York"
+    },
+    {
+      "id": 4,
+      "firstName": "Auberon",
+      "lastName": "Nisen",
+      "email": "anisen3@java.com",
+      "gender": "Female",
+      "phoneNumber": "502-406-4103",
+      "stateOfOrigin": "Kentucky"
+    },
+    {
+      "id": 5,
+      "firstName": "Maryellen",
+      "lastName": "Gollard",
+      "email": "mgollard4@cocolog-nifty.com",
+      "gender": "Female",
+      "phoneNumber": "702-858-8209",
+      "stateOfOrigin": "Nevada"
+    },
+    {
+      "id": 6,
+      "firstName": "Rafi",
+      "lastName": "Wace",
+      "email": "rwace5@gizmodo.com",
+      "gender": "Female",
+      "phoneNumber": "254-112-2160",
+      "stateOfOrigin": "Texas"
+    },
+    {
+      "id": 7,
+      "firstName": "Geoffrey",
+      "lastName": "Burwood",
+      "email": "gburwood6@unicef.org",
+      "gender": "Male",
+      "phoneNumber": "916-523-8872",
+      "stateOfOrigin": "California"
+    },
+    {
+      "id": 8,
+      "firstName": "Verge",
+      "lastName": "Bernakiewicz",
+      "email": "vbernakiewicz7@tripadvisor.com",
+      "gender": "Male",
+      "phoneNumber": "404-646-5556",
+      "stateOfOrigin": "Georgia"
+    },
+    {
+      "id": 9,
+      "firstName": "Maryanne",
+      "lastName": "MacFadzan",
+      "email": "mmacfadzan8@walmart.com",
+      "gender": "Male",
+      "phoneNumber": "757-230-9122",
+      "stateOfOrigin": "Virginia"
+    },
+    {
+      "id": 10,
+      "firstName": "Harwell",
+      "lastName": "Suddick",
+      "email": "hsuddick9@nhs.uk",
+      "gender": "Male",
+      "phoneNumber": "605-154-5124",
+      "stateOfOrigin": "South Dakota"
+    },
+    {
+      "id": 11,
+      "firstName": "Emmalynne",
+      "lastName": "Maplesden",
+      "email": "emaplesdena@taobao.com",
+      "gender": "Male",
+      "phoneNumber": "202-139-7868",
+      "stateOfOrigin": "District of Columbia"
+    },
+    {
+      "id": 12,
+      "firstName": "Catherina",
+      "lastName": "Garmans",
+      "email": "cgarmansb@nymag.com",
+      "gender": "Male",
+      "phoneNumber": "772-428-6696",
+      "stateOfOrigin": "Florida"
+    },
+    {
+      "id": 13,
+      "firstName": "Reggie",
+      "lastName": "Leader",
+      "email": "rleaderc@sourceforge.net",
+      "gender": "Male",
+      "phoneNumber": "805-129-9886",
+      "stateOfOrigin": "California"
+    },
+    {
+      "id": 14,
+      "firstName": "Nesta",
+      "lastName": "Glading",
+      "email": "ngladingd@newyorker.com",
+      "gender": "Male",
+      "phoneNumber": "914-959-8168",
+      "stateOfOrigin": "New York"
+    },
+    {
+      "id": 15,
+      "firstName": "Erin",
+      "lastName": "Renachowski",
+      "email": "erenachowskie@constantcontact.com",
+      "gender": "Female",
+      "phoneNumber": "682-828-4335",
+      "stateOfOrigin": "Texas"
+    },
+    {
+      "id": 16,
+      "firstName": "Star",
+      "lastName": "Ragsdall",
+      "email": "sragsdallf@pcworld.com",
+      "gender": "Female",
+      "phoneNumber": "806-437-4234",
+      "stateOfOrigin": "Texas"
+    },
+    {
+      "id": 17,
+      "firstName": "Althea",
+      "lastName": "Halladay",
+      "email": "ahalladayg@csmonitor.com",
+      "gender": "Male",
+      "phoneNumber": "616-524-5535",
+      "stateOfOrigin": "Michigan"
+    },
+    {
+      "id": 18,
+      "firstName": "Zarah",
+      "lastName": "Collihole",
+      "email": "zcolliholeh@quantcast.com",
+      "gender": "Female",
+      "phoneNumber": "330-756-7902",
+      "stateOfOrigin": "Ohio"
+    },
+    {
+      "id": 19,
+      "firstName": "Fanny",
+      "lastName": "Kornyshev",
+      "email": "fkornyshevi@un.org",
+      "gender": "Male",
+      "phoneNumber": "209-635-9447",
+      "stateOfOrigin": "California"
+    },
+    {
+      "id": 20,
+      "firstName": "Carlotta",
+      "lastName": "Partner",
+      "email": "cpartnerj@webeden.co.uk",
+      "gender": "Female",
+      "phoneNumber": "808-238-2982",
+      "stateOfOrigin": "Hawaii"
+    }
+  ]
+}

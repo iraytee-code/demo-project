@@ -3,15 +3,17 @@ import React from "react";
 const BRadioField = ({ title, name, data, ...others }) => {
   return (
     <div className="mb-3">
-      <div className="d-flex">
-        <span className>{title}</span>
+      <span className>{title}</span>
+      <div className="d-flex justify-content-start">
         {data?.map((item) => {
+          const { id, label } = item;
           return (
-            <div className="form-check mx-3" key={item.id}>
+            <div className="form-check mx-1 my-1" key={id}>
               <input
                 className="form-check-input"
                 name={name}
-                id={item.label}
+                value={label}
+                id={label}
                 {...others}
               />
               <label className="form-check-label" htmlFor={item.label}>
@@ -26,7 +28,7 @@ const BRadioField = ({ title, name, data, ...others }) => {
 };
 
 BRadioField.defaultProps = {
-  title: "Gender",
+  // title: "Gender",
   type: "radio",
   name: "gender",
 };

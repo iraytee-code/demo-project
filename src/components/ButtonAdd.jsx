@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 
 const ButtonAdd = ({ onClick, title, icon, variant, ...props }) => {
   return (
-    <React.Fragment>
+    <Fragment>
       <div className={`btn btn-${variant}`} onClick={onClick} {...props}>
         {title}
         <span className="px-2">
@@ -10,7 +10,7 @@ const ButtonAdd = ({ onClick, title, icon, variant, ...props }) => {
           <i className={`fa fa-${icon}`} aria-hidden="true" />
         </span>
       </div>
-    </React.Fragment>
+    </Fragment>
   );
 };
 
