@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-
 import { BModal, NavBar, Table, FormField, ButtonAdd } from "../components";
 import { Container, Row, Col } from "react-bootstrap";
 import { options as data } from "../data";
 import axios from "axios";
+import SweetAlert from "react-bootstrap-sweetalert";
 
 const initialValues = {
   firstName: "",
@@ -17,6 +17,7 @@ const initialValues = {
 const Welcome = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [tableData, setTableData] = useState([]);
+  const [alert, setAlert] = useState(null);
   const [formData, setFormData] = useState([
     {
       firstName: "",
@@ -133,6 +134,54 @@ const Welcome = () => {
     }
   };
 
+  const getBiodataById = async (id) => {
+    axios
+      .get(`http://localhost:4500/biodata/${id}`)
+      .then((res) => {
+        console.log(res.data.firstName);
+        setFormData((prev) => [
+          {
+            firstName: res.data.firstName,
+            lastName: res.data.lastName,
+            email: res.data.email,
+            gender: res.data.gender,
+            stateOfOrigin: res.data.stateOfOrigin,
+            phoneNumber: res.data.phoneNumber,
+          },
+        ]);
+        handleOpen();
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+  const deleteBiodataById = (id) => {
+    axios
+      .delete(`http://localhost:4500/biodata/${id}`)
+      .then((res) => {
+        const getAlert = () => (
+          <SweetAlert
+            success
+            title="Record was successfully deleted"
+            openAnim={{ name: "showSweetAlert", duration: 1000 }}
+            closeAnim={{ name: "hideSweetAlert", duration: 500 }}
+            onConfirm={hideAlert}
+            timeout={2000}
+          />
+        );
+        setAlert(getAlert);
+        getBiodata();
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+  const hideAlert = () => {
+    setAlert(null);
+  };
+
   useEffect(() => {
     getBiodata();
   }, []);
@@ -153,8 +202,12 @@ const Welcome = () => {
             </Col>
           </Row>
         </section>
-        <h4>{process.env.REACT_APP_BASE_URL}</h4>
-        <Table data={tableData} />
+        {/* <h4>{process.env.REACT_APP_BASE_URL}</h4> */}
+        <Table
+          data={tableData}
+          getBiodataById={getBiodataById}
+          deleteBiodataById={deleteBiodataById}
+        />
       </Container>
       <BModal
         showModal={isOpen}

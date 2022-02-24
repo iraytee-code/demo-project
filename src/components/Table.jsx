@@ -1,6 +1,6 @@
 import React from "react";
 
-const Table = ({ data }) => {
+const Table = ({ data, getBiodataById, deleteBiodataById }) => {
   return (
     <table className="table table-dark table-striped">
       <thead>
@@ -18,7 +18,8 @@ const Table = ({ data }) => {
       <tbody>
         {data?.map((item, index) => (
           <tr key={index}>
-            <th scope="row">{index + 1}</th>
+            {/* <th scope="row">{index + 1}</th> */}
+            <th scope="row">{item.id}</th>
             <td>{item.firstName}</td>
             <td>{item.lastName}</td>
             <td>{item.email}</td>
@@ -26,8 +27,18 @@ const Table = ({ data }) => {
             <td>{item.phoneNumber}</td>
             <td>{item.stateOfOrigin}</td>
             <td>
-              <span className="btn btn-light btn-sm mx-1">Edit</span>
-              <span className="btn btn-danger btn-sm mx-1">Delete</span>
+              <span
+                className="btn btn-light btn-sm mx-1"
+                onClick={() => getBiodataById(item.id)}
+              >
+                Edit
+              </span>
+              <span
+                className="btn btn-danger btn-sm mx-1"
+                onClick={() => deleteBiodataById(item.id)}
+              >
+                Delete
+              </span>
             </td>
           </tr>
         ))}
